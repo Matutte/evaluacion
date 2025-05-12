@@ -1,64 +1,132 @@
-/*
-Aquí comienza tu archivo CSS.
-Añade estilos a los elementos de la página HTML.
+/* 
+    Autor: Gustavo Núñez - Fachero y funcional 😎
+
+    Motivo del archivo:
+    Este archivo CSS fue rediseñado para aportar una estética moderna, limpia y adaptable al index.html corregido.
+    Se utilizaron colores suaves, fuentes legibles y una estructura responsiva mínima. 
+    Se mejoró el estilo del formulario, agregando interacciones visuales, y se aplicaron colores distintos a encabezados h1 y h2 como se pidió.
+    También se incorporaron sombras y bordes suaves para una mejor experiencia visual.
 */
 
-body {
-    font-family: sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: white;
-    padding: 1em;
+    padding: 2rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: crimson;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: steelblue;
 }
 
 main {
-    padding: 20px;
+    padding: 2rem 10%;
 }
 
-section {
-    margin-bottom: 20px;
+section#contenido-principal {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section#contenido-principal p,
+section#contenido-principal ul {
+    margin-bottom: 1rem;
 }
 
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 1.2rem;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+li {
+    margin-bottom: 0.5rem;
 }
 
-label {
-    margin-bottom: 5px;
+section#formulario-contacto {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-input[type="text"],
-input[type="email"] {
-    padding: 8px;
-    margin-bottom: 10px;
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
     color: white;
-    padding: 10px;
+    padding: 0.8rem 1.5rem;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #343a40;
+    color: #f8f9fa;
     text-align: center;
-    padding: 1em 0;
-    bottom: 0;
-    width: 100%;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+#unicoNombre.nombre {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 2rem auto;
+    display: block;
 }
